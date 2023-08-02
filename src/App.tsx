@@ -1,25 +1,22 @@
 import type { Component } from 'solid-js';
 
-import logo from './logo.svg';
 import styles from './App.module.css';
+import TransitionTest from "./components/TransitionTest";
+import TransitionTest2 from "./components/TransitionTest2";
+import TransitionTest3 from "./components/TransitionTest3";
+import TransitionTest4 from "./components/TransitionTest4";
 
 const App: Component = () => {
+
   return (
-    <div class={styles.App}>
-      <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
-      </header>
+    <div class={styles.app}>
+      <TransitionTest/>
+      <hr/>
+      <TransitionTest2/>
+      <hr/>
+      <TransitionTest3/>
+      <hr/>
+      <TransitionTest4/>
     </div>
   );
 };

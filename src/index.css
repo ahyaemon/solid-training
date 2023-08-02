@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.moji {
+  font-size: 120%;
+  transition-property: font-size;
+  transition-duration: 1s;
+}
+
+.moji.clicked {
+  font-size: 200%;
+}
+
+.slide-enter-active,
+.slide-exit-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+.slide-enter,
+.slide-exit-to {
+  transform: translateY(10px);
+  opacity: 0;
+}
+.slide-enter {
+  transform: translateY(-10px);
+}
